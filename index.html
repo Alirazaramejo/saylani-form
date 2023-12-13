@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/saylani favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Saylani Welfare Int Trust</title>
+</head>
+
+<body class="container">
+    <div class="header">
+        <img src="./assets/cover logo.jpg" alt="" class="headerLogo">
+    </div>
+    <div class="row justify-content-center formContainer">
+        <!-- select city div -->
+        <div class="cityDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Select City</label>
+            <div class="selectInputDiv">
+                <select name="select-city" id="select-city">
+                    <option value="" disabled selected>Select city</option>
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="peshawar">Peshawar</option>
+                    <option value="islamabad">Islamabad</option>
+                </select>
+            </div>
+        </div>
+        <!-- select course -->
+        <div class="courseDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Select Course or Event</label>
+            <div class="selectInputDiv">
+                <select name="select-course" id="select-course">
+                    <option value="" disabled selected>Select Course or Event</option>
+                    <option value="web-&-mobile-app-development">Web & Mobile App Development</option>
+                    <option value="graphics-designing">Graphics Designing</option>
+                    <option value="video-animation">Video Animation</option>
+                    <option value="techno-kids">Techno Kids</option>
+                </select>
+            </div>
+        </div>
+        <!-- full Name Div -->
+        <div class="nameDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Full Name</label>
+            <div class="inputDiv">
+                <input type="text" id="nameInput" placeholder="Full Name">
+            </div>
+        </div>
+        <!-- father Name Div -->
+        <div class="fatherNameDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Father Name</label>
+            <div class="inputDiv">
+                <input type="text" id="fatherNameInput" placeholder="Father Name">
+            </div>
+        </div>
+        <!-- email Div -->
+        <div class="emailDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Email</label>
+            <div class="inputDiv">
+                <input type="email" id="emailInput" placeholder="Email">
+            </div>
+        </div>
+        <!-- phone Div -->
+        <div class="phoneDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Phone</label>
+            <div class="inputDiv">
+                <input type="number" id="phoneInput" placeholder="03000000000" maxlength="11">
+            </div>
+        </div>
+        <!-- cnic Div -->
+        <div class="cnicDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">CNIC</label>
+            <div class="inputDiv">
+                <input type="number" id="cnicInput" placeholder="CNIC" maxlength="13">
+            </div>
+        </div>
+        <!-- father cnic Div -->
+        <div class="fatherCnincDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Father's CNIC (optional)</label>
+            <div class="inputDiv">
+                <input type="number" id="fatherCnicInput" placeholder="Father's CNIC (optional)">
+            </div>
+        </div>
+        <!-- date Div -->
+        <div class="dateDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Date of birth</label>
+            <div class="inputDiv">
+                <input type="date" id="dateInput">
+            </div>
+        </div>
+        <!-- select gender -->
+        <div class="genderDiv col-12 col-sm-12 col-md-6 col-lg-5">
+            <label id="formLabel">Select gender</label>
+            <div class="selectInputDiv">
+                <select name="select-gender" id="select-gender">
+                    <option value="" disabled selected>Select gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+        </div>
+        <!-- address Div -->
+        <div class="addressDiv col-12 col-sm-12 col-md-12 col-lg-10">
+            <label id="formLabel">Address</label>
+            <div class="inputDiv">
+                <input type="text" id="addressInput" placeholder="Address">
+            </div>
+        </div>
+        <!-- last qualification Div -->
+        <div class="lastQualificationDiv col-12 col-sm-12 col-md-12 col-lg-10">
+            <label id="formLabel">Last Qualification</label>
+            <div class="selectInputDiv">
+                <select name="last-qualification" id="last-qualification">
+                    <option value="" disabled selected>Last Qualification</option>
+                    <option value="matric">Matric</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="undergraduate">Undergraduate</option>
+                    <option value="graduate">Graduate</option>
+                    <option value="masters">Masters</option>
+                    <option value="phd">PHD</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <!-- Do you have a Laptop? Div -->
+        <div class="genderDiv col-12 col-sm-12 col-md-12 col-lg-10">
+            <label id="formLabel">Do you have a Laptop?</label>
+            <div class="selectInputDiv">
+                <select name="have-laptop" id="have-laptop">
+                    <option value="" disabled selected>Do you have a Laptop?</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+        </div>
+        <!-- picture Div -->
+        <div class="pictureDiv col-12 col-sm-12 mt_20 col-md-12 col-lg-10">
+            <label id="formLabel">Picture</label>
+            <div class="upload-rulesDiv col-12 col-sm-12 mt_20 col-md-12 col-lg-10 d-flex">
+                <div class="profilePicDiv">
+                </div>
+                <div class="uploadBtnDiv">
+                    <div class="inputDiv" id="picInputDiv">
+                        <input type="file" accept="image/*" id="picInput">
+                        <span>+ Upload</span>
+                    </div>
+                </div>
+
+                <div class="picRulesDiv">
+                    <ul>
+                        <li>With white or blue background
+                        </li>
+                        <li>
+                            File size must be less than 1MB
+                        </li>
+                        <li>
+                            File type: jpg, jpeg, png
+                        </li>
+                        <li>
+                            Upload your recent passport size picture
+                        </li>
+                        <li>
+                            Your Face should be clearly visible without any Glasses
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- rulesParentDiv -->
+        <div class="rulesParentDiv col-12 col-sm-12 mt_20 col-md-12 col-lg-10">
+            <div class="separaterLine"></div>
+            <div class="rulesDiv">
+                <ol>
+                    <li>I hereby, solemnly declare that the data and facts mentioned herein are true and correct to the
+                        best
+                        of my knowledge. Further, I will abide by all the established and future regulations and
+                        policies of
+                        SWIT</li>
+                    <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved
+                        in
+                        any other activity, political or ethical, but learning during my stay in the program.</li>
+                    <li>Defiance will render my admission canceled at any point in time.</li>
+                    <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
+                    <li>It's mandatory for female students to wear abaya/hijab in the class</li>
+                </ol>
+            </div>
+        </div>
+        <!-- submitBtnDiv -->
+        <div class="submitBtnDiv col-12 col-sm-12 mt_20 col-md-12 col-lg-10">
+            <button class="submitBtn">
+                Submit
+            </button>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>

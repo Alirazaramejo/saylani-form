@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.headerLogo {
+    width: 100%;
+}
+
+.formContainer {
+    display: flex;
+    margin: 20px 0;
+}
+
+.formContainer label {
+    width: 100%;
+}
+
+#formLabel {
+    color: #0d6db7;
+}
+
+
+.selectInputDiv,
+.inputDiv {
+    width: 100%;
+    margin: 10px 0;
+}
+
+.selectInputDiv select {
+    background-color: #fff;
+    color: #bfbfbf !important;
+    border-color: #8dc63f;
+    border-radius: 5px;
+    position: relative;
+    transition: all .5s;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.inputDiv input {
+    border: 1px solid #8dc63f;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    background-color: initial;
+    border-radius: 5px;
+    color: #666;
+    outline: 0;
+    font-size: 14px;
+    transition: all .5s;
+}
+
+.inputDiv input:focus,
+.selectInputDiv select:focus-visible {
+    border: 1px solid #0d6db7 !important;
+    color: black;
+}
+
+/* Style for opened dropdown options */
+.selectInputDiv select:focus,
+.selectInputDiv select:active,
+.selectInputDiv select:visited,
+.selectInputDiv select::target-text {
+    color: black !important;
+    outline: 0;
+}
+
+
+/* Style for the dropdown options */
+.selectInputDiv select option {
+    background-color: #fff;
+    color: #333;
+    transition: background-color 0.3s;
+    /* Add transition for smooth color change */
+}
+
+/* Style for the hovered option */
+.selectInputDiv select option:hover {
+    background-color: #0d6db7;
+    color: #fff;
+    /* Change text color on hover if needed */
+}
+
+.col-12 {
+    margin-top: 15px;
+}
+
+.uploadBtnDiv,
+.profilePicDiv {
+    background-color: #fafafa;
+    border: 1px dashed #d9d9d9;
+    border-radius: 2px;
+    cursor: pointer;
+    height: 104px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    text-align: center;
+    transition: border-color .3s;
+    vertical-align: top;
+    width: 104px;
+}
+
+.uploadBtnDiv:hover,
+.profilePicDiv:hover {
+    border-color: #1890ff;
+}
+
+.profilePicDiv {
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+#profileImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.uploadBtnDiv .inputDiv {
+    height: 100%;
+    margin: 0;
+    position: relative;
+}
+
+.uploadBtnDiv span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    width: 65px;
+}
+
+.uploadBtnDiv input[type=file] {
+    background-color: black;
+    height: 100%;
+    display: none;
+}
+
+.picRulesDiv ul {
+    list-style: none;
+    font-size: 14px;
+}
+
+.rulesDiv ol {
+    font-size: 14px;
+}
+
+.separaterLine {
+    margin: 24px 0;
+    min-width: 100%;
+    width: 100%;
+    border-top: 1px solid rgba(0, 0, 0, 0.165);
+}
+
+.submitBtnDiv button {
+    border: none;
+    font-size: 14px !important;
+    outline: none;
+    padding: 10px 30px;
+    width: 100%;
+}
+
+.submitBtnDiv {
+    margin-bottom: 30px;
+}
+
+.submitBtn {
+    border-color: #0a58ca;
+    background-color: #0d6db7;
+    color: #fff;
+}
+
+.submitBtn .spinner-border {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 425px) {
+    .upload-rulesDiv {
+        flex-direction: column;
+    }
+
+    .upload-rulesDiv ul {
+        padding: 0;
+    }
+}
